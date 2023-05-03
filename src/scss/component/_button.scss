@@ -1,0 +1,15 @@
+.button{
+    height: 60px;
+    border: solid black;
+    width: 200px;
+    background: transparent;
+    color: black;
+    position: absolute;
+    bottom: 130px;
+    cursor: pointer;
+    &:hover{
+        color: burlywood;
+        border: solid burlywood;
+    }
+
+}
