@@ -1,7 +1,16 @@
 body{
     margin:0px;
 }
-
+a{
+    text-decoration: none;
+}
+hr{
+    margin:0;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+}
 .categorie{
     display: flex;
     margin:0px;
@@ -16,8 +25,49 @@ body{
     justify-content: center;
     
     .titre{
-        font-size: 16px;
+        font-size: 16px; 
         font-family: 'Times New Roman', Times, serif;
     }
     }
+}
+
+.step{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    ul{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+            & li {
+            display: block;
+            padding: 0.5em; 
+            }
+        }
+}
+.shop{
+    display: flex;
+    justify-content: center;
+}
+
+.pay{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    & .cart{
+        width: 500px;
+        height: 260px;
+        background-color: aqua;
+        border-radius: 15px;
+        
+    }
+    & .cart-input{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+         width: 350px;
+    }
+    
 }

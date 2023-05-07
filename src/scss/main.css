@@ -2,6 +2,19 @@ body {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin: 0;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
 .categorie {
   display: flex;
   margin: 0px;
@@ -20,19 +33,143 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-.button {
-  height: 60px;
+.step {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.step ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.step ul li {
+  display: block;
+  padding: 0.5em;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+}
+
+.pay {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.pay .cart {
+  width: 500px;
+  height: 260px;
+  background-color: aqua;
+  border-radius: 15px;
+}
+.pay .cart-input {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 350px;
+}
+
+button {
+  height: 50px;
   border: solid black;
-  width: 200px;
-  background: transparent;
-  color: black;
-  position: absolute;
-  bottom: 130px;
+  width: 350px;
+  background: black;
+  color: white;
   cursor: pointer;
 }
-.button:hover {
-  color: burlywood;
-  border: solid burlywood;
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+header {
+  background-color: rgba(230, 230, 230, 0.544);
+  border-bottom: solid 1px rgba(230, 230, 230, 0.88);
+}
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header #logo {
+  width: 110px;
+  line-height: 0;
+  z-index: 10;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+header nav ul li {
+  display: block;
+  padding: 0.5em;
+  color: white;
+}
+header .header-icons ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+header .header-icons ul li {
+  display: block;
+  padding: 0.5em;
+  color: white;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 1s;
+}
+
+.formulaire {
+  display: flex;
+  justify-content: center;
+}
+.formulaire .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+.formulaire .form h1 {
+  text-align: center;
+}
+.formulaire form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulaire form div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 300px;
+}
+
+input {
+  padding: 15px;
+  border: solid 1px;
+  background-color: #f2f2f2;
+  outline: none;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
